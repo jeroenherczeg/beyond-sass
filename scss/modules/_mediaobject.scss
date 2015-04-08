@@ -1,0 +1,71 @@
+.box {
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  margin: 0.8em 0;
+
+  img {
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+  }
+}
+
+.no-padding {
+  padding: 0;
+}
+
+.padding {
+  padding: 0.8em 2em;
+}
+.mediaobject {
+	border-bottom: 1px solid darken($white, 10%);
+    margin: 0 16px;
+    padding: 16px 0;
+    @extend %clearfix;
+
+	&:last-child {
+		border-bottom: none;
+	}
+
+	.mediaobject-afl-title {
+      margin-bottom: 0px;
+      border-bottom-left-radius: 0;
+      border-bottom-right-radius: 0;
+	}
+
+    .mediaobject-afl-img {
+      padding-top: 0;
+      border-radius: 3px;
+      border-top-left-radius: 0;
+      border-top-right-radius: 0;
+    }
+
+	.mediaobject-img {
+		float: left;
+		margin: 0.3em 1em 0.3em 0;
+		border-radius: 3px;
+		width: 100px;
+        padding: 0;
+	}
+	.mediaobject-content {
+		text-align: left;
+	}
+
+	.mediaobject-actions {
+		text-align: right;
+
+		a {
+			color: $primary-color;
+			font-weight: normal;
+			display: inline-block;
+			border: 1px solid darken($white, 10%);
+			border-radius: 3px;
+			padding: 0.2em 0.5em;
+			margin: 0.5em 0.5em 1em 0.5em;
+
+          &:hover {
+            background-color: darken($white, 5%);;
+          }
+		}
+	}
+}

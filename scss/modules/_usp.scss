@@ -1,0 +1,55 @@
+.usp {
+  @extend %block-grid;
+
+  li {
+    @include number-of-items-in-block-grid(1);
+  }
+}
+
+@include mq($screen-sm-min) {
+  .usp {
+    li {
+      @include number-of-items-in-block-grid(2);
+    }
+  }
+}
+
+@include mq($screen-md-min) {
+  .usp {
+    li {
+      @include number-of-items-in-block-grid(3);
+    }
+  }
+}
+
+.search-results {
+  @extend %block-grid;
+
+  li {
+    @include number-of-items-in-block-grid(1);
+  }
+}
+
+@include mq($screen-sm-min) {
+  .search-results {
+    li {
+      @include number-of-items-in-block-grid(2);
+
+      .box {
+        margin: 0.8em;
+      }
+    }
+  }
+}
+
+@include mq($screen-md-min) {
+  .search-results {
+    li {
+      @include number-of-items-in-block-grid(3);
+
+      .box {
+        margin: 0.8em;
+      }
+    }
+  }
+}

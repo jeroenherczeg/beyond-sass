@@ -1,0 +1,59 @@
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+
+    &:before,
+    &:after {
+        webkit-box-sizing: border-box;
+        moz-box-sizing: border-box;
+        box-sizing: border-box;
+    }
+}
+
+html {
+    font-size: 16px;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+body {
+  font-family: $font-family-paragraph;
+    background-color: #fff;
+    color: #333;
+    font-size: 100%;
+    line-height: 1.42857;
+}
+
+img {
+    width: 100%;
+}
+
+fieldset {
+    border: none;
+    padding: 0;
+    margin: 0;
+}
+
+.section {
+  padding: 2em 0;
+}
+
+.center {
+  text-align: center;
+}
+
+.left {
+  text-align: left;
+}
+
+.right {
+  text-align: right;
+}
+
+.cut-here {
+  width: 100%;
+  border : 0;
+  height : 60px;
+  background : url('../img/hr-edit.png');
+  margin : 1em 0;
+}

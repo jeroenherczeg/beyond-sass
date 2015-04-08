@@ -1,0 +1,29 @@
+%block-grid {
+  list-style: none;
+  display: block;
+  padding: 0;
+  margin: 0;
+
+  &:before, &:after {
+    content: " ";
+    display: table;
+  }
+
+  &:after {
+    clear: both;
+  }
+}
+
+@mixin number-of-items-in-block-grid($number) {
+  width: calc(100% / #{$number});
+  display: block;
+  float: left;
+  height: auto;
+
+  &:nth-of-type(1n) {
+    clear: none;
+  }
+  &:nth-of-type(#{$number}n+1) {
+    clear: both;
+  }
+}

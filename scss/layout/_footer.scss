@@ -1,0 +1,33 @@
+#footer {
+
+
+	img {
+
+	}
+
+    .footer-left {
+    	text-align: center;
+    }
+
+    .footer-center {
+    	text-align: center;
+    }
+
+    .footer-right {
+    	text-align: center;
+    }
+
+    a {
+
+    }
+
+    @include mq ($screen-sm-min) {
+	    .footer-left {
+	    	text-align: left;
+	    }
+
+	    .footer-right {
+	    	text-align: right;
+	    }
+    }
+}

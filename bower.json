@@ -1,0 +1,26 @@
+{
+  "name": "beyond-sass",
+  "version": "0.0.0",
+  "authors": [
+    "Jeroen Herczeg <jeroen@squarenine.be>"
+  ],
+  "description": "A SASS SMACSS boilerplate from your friends at madebyBeyond",
+  "main": "scss/index.scss",
+  "moduleType": [
+    "globals"
+  ],
+  "keywords": [
+    "SASS",
+    "SMACSS",
+    "BOILERPLATE"
+  ],
+  "license": "MIT",
+  "homepage": "http://www.herczeg.be",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}

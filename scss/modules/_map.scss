@@ -1,0 +1,51 @@
+.map {
+  height: 300px
+}
+
+.map.small{
+    height: 150px;
+}
+
+.map.medium{
+  height: 300px;
+}
+
+.map.large{
+  height: 500px;
+}
+
+@include mq ($screen-md-min) {
+
+}
+
+@include mq ($screen-lg-min) {
+
+}
+
+.google-maps-info-window {
+
+  a {
+    color: $primary-color;
+    text-decoration: none;
+  }
+}
+
+#map-search-error {
+   position: absolute;
+   z-index: 9999;
+   top: 50%;
+   left: 50%;
+   background-color: #fff;
+   padding: 15px;
+   border-radius: 7px;
+   display: none;
+   text-align: center;
+ }
+
+#map-search-grid-error {
+  background-color: #fff;
+  padding: 15px;
+  border-radius: 7px;
+  display: none;
+  text-align: center;
+}
